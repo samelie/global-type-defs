@@ -1,15 +1,19 @@
 {
-    "name": "@rad/global-type-defs",
-    "version": "0.0.0",
-    "private": true,
-    "type": "module",
-    "exports": {
-        ".": "./src/index.d.ts"
-    },
-    "types": "./src/index.d.ts",
-    "typings": "./src/index.d.ts",
-    "dependencies": {
-        "@rad/eslint": "workspace:*",
-        "@total-typescript/ts-reset": "^0.6.1"
-    }
+  "name": "@rad/global-type-defs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./index.d.ts"
+  },
+  "types": "./index.d.ts",
+  "module": "./index.d.ts",
+  "typings": "./index.d.ts",
+  "files": [
+    "*.d.ts"
+  ],
+  "dependencies": {
+    "@total-typescript/ts-reset": "^0.6.1"
+  }
 }
