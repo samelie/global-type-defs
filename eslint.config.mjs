@@ -1,5 +1,3 @@
-import baseConfig from '@rad/eslint';
+import config from '@rad/eslint';
 
-export default [
-  ...baseConfig,
-];
+export default config();
