@@ -15,5 +15,10 @@
   ],
   "dependencies": {
     "@total-typescript/ts-reset": "^0.6.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "types": "tsc -p tsconfig.typecheck.json"
   }
 }
