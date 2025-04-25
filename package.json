@@ -20,5 +20,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "types": "tsc -p tsconfig.typecheck.json"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "@rad/eslint": "workspace:*",
+    "typescript": "^5.8.3"
   }
 }
