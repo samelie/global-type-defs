@@ -1,4 +1,3 @@
 interface ImportMeta {
-  env: {
-  }
+    env: Record<string, unknown>;
 }

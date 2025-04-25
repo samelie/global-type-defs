@@ -13,19 +13,19 @@
 /** Specialize MediaStreamTrack so that we can refer specifically to an audio track. */
 interface MediaStreamAudioTrack extends MediaStreamTrack {
     readonly kind: "audio";
-    clone(): MediaStreamAudioTrack;
+    clone: () => MediaStreamAudioTrack;
 }
 
 /** Specialize MediaStreamTrack so that we can refer specifically to a video track. */
 interface MediaStreamVideoTrack extends MediaStreamTrack {
     readonly kind: "video";
-    clone(): MediaStreamVideoTrack;
+    clone: () => MediaStreamVideoTrack;
 }
 
 /** Assert that getAudioTracks and getVideoTracks return the tracks with the appropriate kind. */
 interface MediaStream {
-    getAudioTracks(): MediaStreamAudioTrack[];
-    getVideoTracks(): MediaStreamVideoTrack[];
+    getAudioTracks: () => MediaStreamAudioTrack[];
+    getVideoTracks: () => MediaStreamVideoTrack[];
 }
 
 // The following were originally generated from the spec using
@@ -44,8 +44,8 @@ interface MediaStreamTrackProcessor<T extends AudioData | VideoFrame> {
     readonly writableControl: WritableStream<MediaStreamTrackSignal>;
 }
 
-declare var MediaStreamTrackProcessor: {
-    prototype: MediaStreamTrackProcessor<any>;
+declare const MediaStreamTrackProcessor: {
+    prototype: MediaStreamTrackProcessor<AudioData | VideoFrame>;
 
     /** Constructor overrides based on the type of track. */
     new (init: MediaStreamTrackProcessorInit & { track: MediaStreamAudioTrack }): MediaStreamTrackProcessor<AudioData>;
@@ -69,7 +69,7 @@ interface MediaStreamTrackProcessorInit {
 interface MediaStreamTrackGenerator<T extends AudioData | VideoFrame> extends MediaStreamTrack {
     /**
      * Allows writing media frames to the MediaStreamTrackGenerator, which is itself a
-     * MediaStreamTrack. When a frame is written to writable, the frame’s close() method is
+     * MediaStreamTrack. When a frame is written to writable, the frame's close() method is
      * automatically invoked, so that its internal resources are no longer accessible from
      * JavaScript.
      */
@@ -84,8 +84,8 @@ interface MediaStreamTrackGenerator<T extends AudioData | VideoFrame> extends Me
 type MediaStreamAudioTrackGenerator = MediaStreamTrackGenerator<AudioData> & MediaStreamAudioTrack;
 type MediaStreamVideoTrackGenerator = MediaStreamTrackGenerator<VideoFrame> & MediaStreamVideoTrack;
 
-declare var MediaStreamTrackGenerator: {
-    prototype: MediaStreamTrackGenerator<any>;
+declare const MediaStreamTrackGenerator: {
+    prototype: MediaStreamTrackGenerator<AudioData | VideoFrame>;
 
     /** Constructor overrides based on the type of track. */
     new (
@@ -101,7 +101,7 @@ interface MediaStreamTrackGeneratorInit {
     /**
      * (Optional) track to which the MediaStreamTrackGenerator will automatically forward control
      * signals. If signalTarget is provided and signalTarget.kind and kind do not match, the
-     * MediaStreamTrackGenerator’s constructor will raise an exception.
+     * MediaStreamTrackGenerator's constructor will raise an exception.
      */
     signalTarget?: MediaStreamTrack | undefined;
 }

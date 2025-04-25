@@ -22,8 +22,8 @@
     "types": "tsc -p tsconfig.typecheck.json"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
     "@rad/eslint": "workspace:*",
+    "eslint": "^9.25.1",
     "typescript": "^5.8.3"
   }
 }
