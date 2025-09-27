@@ -23,9 +23,9 @@
     "knip": "knip"
   },
   "devDependencies": {
+    "@rad/config": "workspace:*",
     "@rad/eslint": "workspace:*",
     "eslint": "^9.36.0",
-    "typescript": "^5.9.2",
-    "@rad/config": "workspace:*"
+    "typescript": "^5.9.2"
   }
 }
