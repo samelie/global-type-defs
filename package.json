@@ -20,7 +20,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "types": "tsc -p tsconfig.typecheck.json",
-    "knip": "knip"
+    "knip": "knip",
+    "build": "unbuild",
+    "test": "vitest run",
+    "dev": "tsx src/index.ts"
   },
   "devDependencies": {
     "@rad/config": "workspace:*",
