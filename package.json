@@ -27,5 +27,6 @@
     "@rad/eslint": "workspace:*",
     "eslint": "^9.37.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "engines": ">= 22"
 }
