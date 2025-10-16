@@ -26,9 +26,9 @@
     "dev": "tsx src/index.ts"
   },
   "devDependencies": {
-    "@adddog/config-defaults": "^0.0.3",
+    "@adddog/config-defaults": "^0.0.4",
     "@adddog/eslint": "workspace:*",
-    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
     "@rad/config": "workspace:*",
     "typescript": "^5.9.3"
   },
