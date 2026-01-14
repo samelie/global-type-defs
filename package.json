@@ -20,10 +20,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "types": "tsc -p tsconfig.typecheck.json",
-    "knip": "knip",
     "build": "unbuild",
     "test": "echo '⚠️⚠️⚠️no test vitest --watch=false'",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "knip": "knip"
   },
   "devDependencies": {
     "@adddog/config-defaults": "workspace:*",
