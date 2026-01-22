@@ -26,11 +26,11 @@
     "knip": "knip"
   },
   "devDependencies": {
-    "@adddog/config-defaults": "workspace:*",
-    "@adddog/eslint": "workspace:*",
-    "@rad/config": "workspace:*",
     "eslint": "^9.39.2",
-    "typescript": "^5.9.3"
+    "knip": "^5.82.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "unbuild": "^3.6.1"
   },
   "engines": ">= 22"
 }
