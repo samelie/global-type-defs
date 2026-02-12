@@ -5,5 +5,6 @@ import { defineKnipConfig } from "@adddog/monorepo-consistency";
 export default defineKnipConfig({
     entry: ["src/index.ts"],
     project: ["src/**/*.ts"],
+    // WHY: referenced via /// <reference types="dom-webcodecs" /> in media.d.ts
     ignoreDependencies: ["dom-webcodecs"],
 });
