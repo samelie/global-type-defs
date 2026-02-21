@@ -26,6 +26,7 @@
     "knip": "knip"
   },
   "devDependencies": {
+    "@adddog/monorepo-consistency": "workspace:*",
     "eslint": "^10.0.0",
     "knip": "^5.83.1",
     "tsx": "^4.21.0",
