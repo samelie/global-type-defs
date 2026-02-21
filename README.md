@@ -1,4 +1,4 @@
-# @rad/global-type-defs
+# @adddog/global-type-defs
 
 ## Scripts
 
