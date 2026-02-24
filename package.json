@@ -1,6 +1,6 @@
 {
   "name": "@adddog/global-type-defs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "exports": {
     "types": "./index.d.ts",
@@ -31,8 +31,8 @@
   "devDependencies": {
     "@adddog/monorepo-consistency": "workspace:*",
     "bumpp": "^10.4.1",
-    "eslint": "^10.0.0",
-    "knip": "^5.83.1",
+    "eslint": "^10.0.2",
+    "knip": "^5.85.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "unbuild": "^3.6.1"
