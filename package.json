@@ -1,6 +1,6 @@
 {
   "name": "@adddog/global-type-defs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "exports": {
     "types": "./index.d.ts",
