@@ -7,9 +7,16 @@ export default defineKnipConfig({
     project: ["src/**/*.ts"],
 }, {
     "ignoreDependencies": [
-        "@adddog/monorepo-consistency"
+        "@adddog/monorepo-consistency",
+        "dom-webcodecs"
     ],
     "ignoreBinaries": [
         "knip"
+    ],
+    "entry": [
+        "*.d.ts"
+    ],
+    "project": [
+        "*.d.ts"
     ]
 });
