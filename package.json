@@ -32,9 +32,9 @@
     "@adddog/monorepo-consistency": "workspace:*",
     "bumpp": "^11.0.1",
     "eslint": "^10.1.0",
-    "knip": "^6.0.1",
+    "knip": "^6.0.4",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
   "engines": {
     "node": ">= 22",
