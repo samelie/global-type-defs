@@ -18,7 +18,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "types": "tsc -p tsconfig.typecheck.json",
+    "types": "tsgo -p tsconfig.typecheck.json",
     "build": "echo 'No build needed - distributing .d.ts files'",
     "test": "echo '⚠️⚠️⚠️no test vitest --watch=false'",
     "dev": "tsx src/index.ts",
@@ -30,11 +30,11 @@
   },
   "devDependencies": {
     "@adddog/monorepo-consistency": "workspace:*",
+    "@typescript/native-preview": "beta",
     "bumpp": "^11.0.1",
     "eslint": "^10.2.1",
-    "knip": "^6.5.0",
-    "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "knip": "^6.7.0",
+    "tsx": "^4.21.0"
   },
   "engines": {
     "node": ">= 22",
