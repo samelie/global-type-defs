@@ -1,18 +1,55 @@
 {
     "compilerOptions": {
-        "target": "ES2022",
-        "module": "ESNext",
-        "moduleResolution": "bundler",
+        "ignoreDeprecations": "6.0",
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
         "esModuleInterop": true,
-        "strict": true,
+        "verbatimModuleSyntax": true,
+        "skipDefaultLibCheck": true,
+        "exactOptionalPropertyTypes": false,
+        "noUncheckedIndexedAccess": true,
+        "noErrorTruncation": true,
+        "traceResolution": false,
+        "noPropertyAccessFromIndexSignature": false,
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "lib": [
+            "ESNext"
+        ],
         "skipLibCheck": true,
-        "composite": true,
-        "declaration": true,
-        "declarationDir": "./dist",
-        "emitDeclarationOnly": true,
-        "rootDir": "."
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": false,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "noEmit": false,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+        "erasableSyntaxOnly": true,
+        "types": [
+            "node"
+        ]
     },
     "include": [
-        "*.d.ts"
-    ]
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build"
+    ],
+    "watchOptions": {
+        "excludeDirectories": [
+            "**/node_modules",
+            "build",
+            "dist"
+        ],
+        "fallbackPolling": "dynamicPriority",
+        "synchronousWatchDirectory": true,
+        "watchDirectory": "UseFsEvents",
+        "watchFile": "UseFsEventsOnParentDirectory"
+    }
 }
